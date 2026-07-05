@@ -133,7 +133,7 @@ with row3_c2:
 with row3_c3:
     st.markdown("<h4 style='color:white; margin-top:0px;'>En İyi 6 Müşteri (M₺)<span style='font-size:14px; color:#a1acb8; font-weight:normal;'></span></h4>", unsafe_allow_html=True)
     musteri_renkleri = ['#0a6ebd', '#0784d0', '#059ce3', '#10b5e6', '#18cfe8', '#18e6e8']
-    fig_mu = go.Figure(data=[go.Bar(y=['Bodrum', 'İpektaş', 'KC', 'Kaizen', 'Vista', 'Grande'], x=[2.7, 3.5, 4.1, 4.4, 4.4, 4.5],
-                                    orientation='h', marker_color=musteri_renkleri, text=[2.7, 3.5, 4.1, 4.4, 4.4, 4.5], textposition='auto')])
-    fig_mu.update_layout(height=240, template=dark_template, margin=dict(t=20, b=20, l=20, r=20))
+    fig_mu = go.Figure(data=[go.Bar(y=[ 'İpektaş', 'KC', 'Kaizen', 'Vista', 'Grande','Özyangıncı'], x=[3.5, 4.1, 4.4, 4.4, 4.5, 5.1],
+                                    orientation='h', marker_color=musteri_renkleri, text=[ 3.5, 4.1, 4.4, 4.4, 4.5, 5.1], textposition='auto')])
+    fig_mu.update_layout(height=300, template=dark_template, margin=dict(t=20, b=20, l=20, r=20))
     st.plotly_chart(fig_mu, use_container_width=True, config={'displayModeBar': False})
